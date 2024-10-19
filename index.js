@@ -3,7 +3,8 @@ const shell = require('shelljs');
 const readline = require('readline-sync');
 const respostas = ["s", "S", "Y", "y"]
 
-function timeOut(msg){
+function timeOut(m){
+    let msg = m
     setTimeout((msg)=>{console.log(msg)},2000)
 }
 
