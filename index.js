@@ -10,8 +10,8 @@ function commitAndPush(){
     confirm_msg = readline.question('Confirmar commit : ');
     confirm_msg = confirm_msg[0].toUpperCase();
 
-    for(i=0; i < respostas.length; i++){
-        if(confirm_msg == respostas[i] && i < respostas.length){
+   
+        if(respostas.includes(confirm_msg)){
             console.log('Tarefa permitida'); 
             confirm = true;
             try{
@@ -25,7 +25,7 @@ function commitAndPush(){
             }
         }
        
-    }
+    
 
 }
 
